@@ -34,17 +34,18 @@
                 <div class="row center" style="width:50%;">
                     <form>
                         <div class="input-field s6">
-                            <input placeholder="Search" id="first_name" style="color: #FFFFFF;" type="text" class="validate">
+                            <input placeholder="Search" id="search" style="color: #FFFFFF;" type="text" class="validate">
+                            <div class="animated bounceInUp" id="search-button">
+                                <div class="row center">
+                                    <button class="btn waves-effect waves-light" type="submit" onclick="searchButton()" name="action">Search Restaurants
+                                        <i class="material-icons right">restaurant</i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
-                <div class="animated bounceInUp" id="search-button">
-                    <div class="row center">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Search Restaurants
-                            <i class="material-icons right">restaurant</i>
-                        </button>
-                    </div>
-                </div>
+
                 <br>
                 <br>
 
@@ -174,6 +175,7 @@
     <script src="files/js/init.js"></script>
 
     <script src="files/js/p5.js"></script>
+    <script src="files/js/search.js"></script>
     <script src="files/js/addons/p5.dom.js"></script>
     <script src="files/js/addons/p5.sound.js"></script>
     <script src="files/js/addons/p5.collide2d.js"></script>
