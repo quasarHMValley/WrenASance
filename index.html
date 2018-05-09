@@ -18,13 +18,13 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="files/js/materialize.js"></script>
     <script src="files/js/init.js"></script>
-
-    <script src="files/js/p5.js"></script>
-    <script src="files/js/search.js"></script>
-    <script src="files/js/scrape.js"></script>
     <script src="files/js/addons/p5.dom.js"></script>
     <script src="files/js/addons/p5.sound.js"></script>
     <script src="files/js/addons/p5.collide2d.js"></script>
+
+    <script src="files/js/p5.js"></script>
+    <script src="files/js/search.js"></script>
+<!--    <script src="files/js/scrape.js"></script>-->
 
 </head>
 
@@ -47,9 +47,9 @@
                 </div>
                 <span style="display:block; height: 40px;"></span>
                 <div class="row center" style="width:50%;">
-                    <form>
+                    <form method="post" action="/">
                         <div class="input-field s6">
-                            <input placeholder="Search" id="search" style="color: #FFFFFF;" type="text" class="validate">
+                            <input placeholder="Search" id="search" style="color: #FFFFFF;" type="text" class="validate" name="searchInput">
                             <div class="animated bounceInUp" id="search-button">
                                 <div class="row center">
                                     <button class="btn waves-effect waves-light" type="submit" onclick="return searchButton()">Search Restaurants
